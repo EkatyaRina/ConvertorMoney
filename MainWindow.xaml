@@ -1,0 +1,22 @@
+﻿<Window x:Class="ConvertorMoney.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ConvertorMoney"
+        mc:Ignorable="d"
+        WindowStartupLocation="CenterScreen"
+        Title="Convertor Money" Height="300" Width="800"
+        FontSize="18">
+    <Grid>
+        <StackPanel Margin="40 60 40 60">
+            <TextBlock Text="Введите сумму которую нужно конвертировать:"/>
+            <TextBox x:Name="tbFirstNum"/>
+            <Button x:Name="btnConvert"
+                    Click="Converting_Click" 
+                    Margin="30"
+                    Content="Конвертировать USD в EUR"
+                    Width="300"/>            
+        </StackPanel>
+    </Grid>
+</Window>
